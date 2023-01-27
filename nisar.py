@@ -1,9 +1,17 @@
-import platform
+import sys,os
 
-arc = str(platform.uname().machine)
-if 'arm' in arc:
-          __import__("a").nisar()
-elif 'aarch' in arc:
-              __import__("a").nisar()
-else:
-        exit(f' Unknow device machine {arc}')
+os.system('clear')
+
+try:import login
+
+except:sys.exit("\033[1;31mYour device not supported for x64\033[0m")
+
+
+
+
+
+
+
+
+
+
